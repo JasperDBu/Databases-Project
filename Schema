@@ -1,20 +1,20 @@
- create table character(
-  name varchar,
-  role id int,
-  lane id int,
-  char id int
+ create table charecter(
+  charecter_name varchar,
+  role_id int,
+  lane_id int,
+  char_id int
   );
-  insert into character(name,role id,lane id,char id) values
+  insert into charecter(charecter_name, role_id, lane_id, char_id) values
   ('roger', 1, 1, 1),
   ('mathilda', 2,2,2),
   ('harith',3,3,3)
    ;
    
-   create table role(
-     role name varchar,
-     role id int
+   create table char_role(
+     role_name varchar,
+     role_id int
      );
-   insert into role(role name,role id) values
+   insert into char_role(role_name,role_id) values
    ('fighter',1),
    ('support',2),
    ('mage',3),
@@ -24,64 +24,65 @@
    ;
    
    create table lane(
-     lane name varchar,
-     lane id int
+     lane_name varchar,
+     lane_id int
      );
-   insert into lane(lane name,lane id) values
+   insert into lane(lane_name,lane_id) values
    ('gold',1),
    ('roam',2),
    ('mid',3),
    ('exp',4),
    ('jungle',5)
+   ;
    
    create table winrate(
-     winrate int,
-     char id int
+     win_rate int,
+     char_id int
      );
-   insert into winrate(winrate,char id) values
+   insert into winrate(win_rate,char_id) values
    (50.01,1),
-   (49.69,2)
+   (49.69,2),
    (56.64,3)
    ;
    
    
    create table banrate(
      banrate int,
-     char id int
+     char_id int
      );
-   insert into banrate(banrate,char id) values
+   insert into banrate(banrate,char_id) values
    (37.67,1),
-   (95.36,2)
+   (95.36,2),
    (113.38,3)
    ;
    
    
     create table pickrate(
       pickrate int,
-      char id int
+      char_id int
       );
-   insert into pickrate(pickrate,char id) values
+   insert into pickrate(pickrate,char_id) values
    (3.96,1),
-   (0.91,2)
+   (0.91,2),
    (1.1,3)
    ;
    
-   create table recommended build(
-     emeblem id int,
-     spell id int,
-     char id int
+   create table recommended_build(
+     emblem_id int,
+     spell_id int,
+     char_id int
      );
-   insert into recommended build(emblem id,spell id,char id) values
-   (1,1,1)
-   (
+   insert into recommended_build(emblem_id, spell_id, char_id) values
+   (1,1,1),
+  (2,2,2)
    ;
    
    
    create table emblems(
-     emblem name varchar,
-     emblem id int
+     emblem_name varchar,
+     emblem_id int
      );
-   insert into emblems(emblem name,emblem id) values
+   insert into emblems(emblem_name, emblem_id) values
    ('common',1),
    ('support',2),
    ('mage',3),
@@ -93,10 +94,10 @@
    
    
    create table spells(
-     spell name varchar,
-     spell id int
+     spell_name varchar,
+     spell_id int
      );
-   insert into spells(spell name,spell id) values
+   insert into spells(spell_name,spell_id) values
    ('flicker',1),
    ('execute',2),
    ('retribution',3)
