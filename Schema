@@ -1,4 +1,4 @@
- create table charecter(
+create table charecter(
   charecter_name varchar,
   role_id int,
   lane_id int,
@@ -7,7 +7,9 @@
   insert into charecter(charecter_name, role_id, lane_id, char_id) values
   ('roger', 1, 1, 1),
   ('mathilda', 2,2,2),
-  ('harith',3,3,3)
+  ('harith',3,3,3),
+  ('yve',3,3,4),
+  ('yu zhong',1,4,8)
    ;
    
    create table char_role(
@@ -42,7 +44,9 @@
    insert into winrate(win_rate,char_id) values
    (50.01,1),
    (49.69,2),
-   (56.64,3)
+   (56.64,3),
+   (50.18,4),
+   (50.14,8)
    ;
    
    
@@ -53,7 +57,8 @@
    insert into banrate(banrate,char_id) values
    (37.67,1),
    (95.36,2),
-   (113.38,3)
+   (113.38,3),
+   (0.49,8)
    ;
    
    
@@ -64,7 +69,9 @@
    insert into pickrate(pickrate,char_id) values
    (3.96,1),
    (0.91,2),
-   (1.1,3)
+   (1.1,3),
+   (0.15,4),
+   (1.75,8)
    ;
    
    create table recommended_build(
@@ -74,7 +81,9 @@
      );
    insert into recommended_build(emblem_id, spell_id, char_id) values
    (1,1,1),
-  (2,2,2)
+  (2,2,2),
+  (3,5,4),
+  (4,8,8)
    ;
    
    
