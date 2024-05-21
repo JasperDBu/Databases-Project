@@ -100,5 +100,14 @@
    insert into spells(spell_name,spell_id) values
    ('flicker',1),
    ('execute',2),
-   ('retribution',3)
+   ('retribution',3),
+   ('inspire',4),
+   ('sprint',5),
+   ('revitalize',6),
+   ('aegis',7),
+   ('petrify',8),
+   ('purify',9),
+   ('flameshot',10),
+   ('arrival',11),
+   ('vengeance',12)
    ;
