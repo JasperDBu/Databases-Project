@@ -1,0 +1,103 @@
+ create table character(
+  name varchar,
+  role id int,
+  lane id int,
+  char id int
+  );
+  insert into character(name,role id,lane id,char id) values
+  ('roger', 1, 1, 1),
+  ('mathilda', 2,2,2),
+  ('harith',3,3,3)
+   ;
+   
+   create table role(
+     role name varchar,
+     role id int
+     );
+   insert into role(role name,role id) values
+   ('fighter',1),
+   ('support',2),
+   ('mage',3),
+   ('marksman',4),
+   ('assasin',5),
+   ('tank',6)
+   ;
+   
+   create table lane(
+     lane name varchar,
+     lane id int
+     );
+   insert into lane(lane name,lane id) values
+   ('gold',1),
+   ('roam',2),
+   ('mid',3),
+   ('exp',4),
+   ('jungle',5)
+   
+   create table winrate(
+     winrate int,
+     char id int
+     );
+   insert into winrate(winrate,char id) values
+   (50.01,1),
+   (49.69,2)
+   (56.64,3)
+   ;
+   
+   
+   create table banrate(
+     banrate int,
+     char id int
+     );
+   insert into banrate(banrate,char id) values
+   (37.67,1),
+   (95.36,2)
+   (113.38,3)
+   ;
+   
+   
+    create table pickrate(
+      pickrate int,
+      char id int
+      );
+   insert into pickrate(pickrate,char id) values
+   (3.96,1),
+   (0.91,2)
+   (1.1,3)
+   ;
+   
+   create table recommended build(
+     emeblem id int,
+     spell id int,
+     char id int
+     );
+   insert into recommended build(emblem id,spell id,char id) values
+   (1,1,1)
+   (
+   ;
+   
+   
+   create table emblems(
+     emblem name varchar,
+     emblem id int
+     );
+   insert into emblems(emblem name,emblem id) values
+   ('common',1),
+   ('support',2),
+   ('mage',3),
+   ('fighter',4),
+   ('assasin',5),
+   ('tank',6),
+   ('marksman',7)
+   ;
+   
+   
+   create table spells(
+     spell name varchar,
+     spell id int
+     );
+   insert into spells(spell name,spell id) values
+   ('flicker',1),
+   ('execute',2),
+   ('retribution',3)
+   ;
