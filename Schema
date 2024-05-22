@@ -99,7 +99,7 @@
    insert into recommended_build(emblem_id, spell_id, char_id) values
    (1,1,1),
    (2,2,2),
-   //can't find
+   --can't find
    (3,5,4),
    (6,1,5),
    (6,3,6),
