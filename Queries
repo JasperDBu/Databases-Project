@@ -10,4 +10,15 @@ from banrate
 join charecter on charecter.char_id = banrate.char_id
 order by banrate asc
 
+-- query to attempt to add build (spells and emblems) to the winrate and charecter name 
+select win_rate, charecter_name, role_name/*, spells.spell_id|| ', '|| emblems.emblem_id as build */
+from winrate
+join charecter on charecter.char_id = winrate.char_id 
+join char_role on charecter.role_id = char_role.role_id
+--join build on charecter.char_id = reccomended_build.char_id
+
+order by win_rate desc
+
+--
+
 
