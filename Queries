@@ -4,4 +4,10 @@ from winrate
 join charecter on charecter.char_id = winrate.char_id
 order by win_rate desc
 
---
+-- with this data we can know know what heroes needed some nerfing
+select round(banrate.banrate,2), charecter_name
+from banrate
+join charecter on charecter.char_id = banrate.char_id
+order by banrate asc
+
+
