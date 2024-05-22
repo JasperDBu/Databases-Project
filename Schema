@@ -1,4 +1,4 @@
-create table charecter(
+ create table charecter(
   charecter_name varchar,
   role_id int,
   lane_id int,
@@ -8,10 +8,12 @@ create table charecter(
   ('roger', 1, 1, 1),
   ('mathilda', 2,2,2),
   ('harith',3,3,3),
-  ('yve',3,3,4),
+  
   ('minotaur', 6, 2, 5),
-  ('yu zhong',1,4,8),
-   ('Claude', 4, 1,9)
+  ('fredrinn',6,5,6),
+  ('natan',4,1,7),
+  
+  ('Claude', 4, 1,9)
    ;
    
    create table char_role(
@@ -47,12 +49,12 @@ create table charecter(
    (50.01,1),
    (49.69,2),
    (56.64,3),
-   (50.18,4),
+   
+   (53.01, 5),
+   (54.27,6),
+   (58.71,7),
 
-  (53.01, 5),
-
-  (50.14,8),
-  (47.70, 9)
+   (47.70, 9)
    ;
    
    
@@ -64,11 +66,11 @@ create table charecter(
    (37.67,1),
    (95.36,2),
    (113.38,3),
-
-
-  (41.24,5),
-
-   (0.49,8),
+   
+   (41.24,5),
+   (80.95,6),
+   (37.5,7),
+   
    (1.24,9)
    ;
    
@@ -81,13 +83,12 @@ create table charecter(
    (3.96,1),
    (0.91,2),
    (1.1,3),
-   (0.15,4),
-
+   
    (1.64, 5),
+   (1.96,6),
+   (3.18,7),
 
-   (1.75,8),
    (2.81,9)
-
    ;
    
    create table recommended_build(
@@ -97,13 +98,13 @@ create table charecter(
      );
    insert into recommended_build(emblem_id, spell_id, char_id) values
    (1,1,1),
-  (2,2,2),
-  (3,5,4),
+   (2,2,2),
+   
+   (6,1,5),
+   (6,3,6),
+   (7,1,7),
 
-  (6,1,5),
-
-  (4,8,8),
-  (1,9,9)
+   (1,9,9)
    ;
    
    
@@ -140,3 +141,4 @@ create table charecter(
    ('arrival',11),
    ('vengeance',12)
    ;
+
