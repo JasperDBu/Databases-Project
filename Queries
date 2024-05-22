@@ -1,0 +1,7 @@
+-- this query can be used to find the best character by winrate. You can use this for find a character that may need nerfing 
+select win_rate, charecter_name
+from winrate
+join charecter on charecter.char_id = winrate.char_id
+order by win_rate desc
+
+--
