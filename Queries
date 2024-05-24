@@ -35,4 +35,15 @@ join lane on lane.lane_id = charecter.lane_id
 where lane_name = 'gold'
 order by lane desc
 
+-- work in progress 
+select --charecter_name, role_name, lane_name, win_rate, pickrate, banrate
+from charecter
+join char_role on char_role.role_id = charecter.role_id
+join lane on lane.lane_id = charecter.lane_id
+join winrate on winrate.char_id = charecter.char_id
+join pickrate on pickrate.char_id = charecter.char_id
+join banrate on banrate.char_id = charecter.char_id
+join recommended_build on recommended_build.char.id = charecter.char_id
+
+
 
