@@ -25,4 +25,14 @@ join spells on spells.spell_id = recommended_build.spell_id
 group by recommended_build.spell_id, spells.spell_name
 order by times_used desc
 
+-- this query can be used to filter charecters by the most commonly used lane
+/*find the most commonly used lane by counting
+filter by lane to see what charecters in that lane
+order by name desc*/
+select lane_name, charecter_name
+from charecter
+join lane on lane.lane_id = charecter.lane_id
+where lane_name = 'gold'
+order by lane desc
+
 
