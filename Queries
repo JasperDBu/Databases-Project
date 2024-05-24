@@ -19,6 +19,11 @@ join char_role on charecter.role_id = char_role.role_id
 
 order by win_rate desc
 
---
+-- this query finds out how many time spells have been used. You can use this query to find out how much a spell is being used or to find the most popular spell.
+select count(recommended_build.spell_id) as times_used, spells.spell_name
+from recommended_build
+join spells on spells.spell_id = recommended_build.spell_id
+group by recommended_build.spell_id, spells.spell_name
+order by times_used desc
 
 
