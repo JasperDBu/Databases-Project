@@ -36,7 +36,7 @@ where lane_name = 'gold'
 order by lane desc
 
 -- a view that collects all the data and forms it all together
-   create view charecters
+   create view charecters. You can use this data to make a tier list or to read all the data of each character.
    as
    select charecter_name, role_name, lane_name, win_rate || '%' || ' / ' || pickrate || '%' || ' / 		' || banrate || '%' as Winrate_Pickrate_Banrate , emblem_name, spell_name
 	from charecter
