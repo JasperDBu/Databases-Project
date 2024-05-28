@@ -43,7 +43,7 @@ join lane on lane.lane_id = charecter.lane_id
 join winrate on winrate.char_id = charecter.char_id
 join pickrate on pickrate.char_id = charecter.char_id
 join banrate on banrate.char_id = charecter.char_id
-join recommended_build on recommended_build.char.id = charecter.char_id
+join recommended_build on recommended_build.char_id = charecter.char_id
 
 
 
