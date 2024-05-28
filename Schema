@@ -164,10 +164,17 @@
    ;
   
   
-  /*
-   create view --name
+
+   create view charecters
    as
---insert your view here
-;
-*/
-   
+   select charecter_name, role_name, lane_name, win_rate || '%' || ' / ' || pickrate || '%' || ' / 		' || banrate || '%' as Winrate_Pickrate_Banrate , emblem_name, spell_name
+	from charecter
+	join char_role on char_role.role_id = charecter.role_id
+	join lane on lane.lane_id = charecter.lane_id
+	join winrate on winrate.char_id = charecter.char_id
+	join pickrate on pickrate.char_id = charecter.char_id
+	join banrate on banrate.char_id = charecter.char_id
+	join recommended_build on recommended_build.char_id = charecter.char_id
+	join emblems on emblems.emblem_id = recommended_build.emblem_id
+	join spells on spells.spell_id = recommended_build.spell_id
+
